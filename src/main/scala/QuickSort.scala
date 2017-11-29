@@ -1,3 +1,6 @@
+package scala
+
+
 /**
   * To sort array of integers with duplicates in ascending order
   * Created by Ujjwal on 29/11/17.
@@ -13,8 +16,7 @@ object QuickSort {
     }
 
   def main(args: Array[String]) = {
-    val a = Array(5, 3, 2, 2, 1, 1, 9, 39, 219)
+    val a = Utils.n_rands(100).toArray
     sort(a).foreach(n => (print(n), print(" ")))
-
   }
 }
